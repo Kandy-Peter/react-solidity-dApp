@@ -1,13 +1,18 @@
 import { useState } from 'react'
+import { Navbar, Transactions, Services, Welcome, Footer } from './components'
 
 function App() {
 
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
+    <div className="min-h-screen">
+      <div className='gradient-bg-welcome'>
+        <Navbar />
+        <Welcome />
+      </div>
+      <Services />
+      <Transactions />
+      <Footer />
+    </div >
   )
 }
 
